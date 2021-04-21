@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Kumbh+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+@import 'settings.scss';
+@import 'settingsVariables.scss';
+@import 'colors.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var(--font-family);
+	background-color: $bgColor;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header {
+	margin-top: 35px;
+}
+
+nav {
+	display: flex;
+
+	margin-top: 30px;
+	padding: 7px 5px 7px 5px;
+
+	border-radius: 40px;
+
+	background-color: $elementsBgColor;
+
+	@media only screen and (max-width: 400px) {
+		width: 340px;
+	}
+}
+
+.navItem {
+	display: flex;
+	width: 120px;
+	height: 50px;
+
+	font-weight: bold;
+
+	background-color: transparent;
+	color: #636984;
+
+	justify-content: center;
+	align-items: center;
+
+	text-decoration: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	&:hover {
+		color: $fontColor;
+	}
+}
+
+.navItemActive {
+	border-radius: 40px;
+
+	background-color: var(--theme-color);
+	color: $elementsBgColor;
+}
+
+#progressbarBox {
+	width: 300px;
+	height: 300px;
+	margin-top: 45px;
+
+	border-radius: 50%;
+	border: 14px solid #1A1E3A;
+
+	box-shadow: -15px -15px 200px -100px hsla(0, 0%, 100%, 1),
+				40px 40px 100px -30px rgba(0, 0%, 0%, 1);
+}
+
+.startButton {
+	$letterSpacing: 12px;
+
+	height: 30px;
+	position: relative;
+	top: 80px;
+
+	padding-left: $letterSpacing;
+
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: $letterSpacing;
+	text-align: center;
+
+	background: none;
+	color: $fontColor;
+
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	&:hover {
+		color: #F87070;
+	}
+}

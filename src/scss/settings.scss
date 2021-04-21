@@ -1,0 +1,229 @@
+@import 'colors.scss';
+
+#settingsOverlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	background-color: rgba(0, 0, 0, 0.4);
+
+	justify-content: center;
+	align-items: center;
+}
+
+#settingsWindow {
+	display: flex;
+	width: 541px;
+	height: 464px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+
+	border-radius: 30px;
+
+	background-color: white;
+
+	flex-flow: column;
+	justify-content: space-around;
+
+	@media only screen and (max-width: 500px) {
+		width: 310px;
+		height: 530px;
+	}
+}
+
+#settingsHeader {
+	display: flex;
+
+	margin-top: 15px;
+	padding: 0 10px 20px 10px;
+
+	border-bottom: 1px solid grey;
+
+	justify-content: space-between;
+}
+
+#settingsLabel {
+	font-size: 30px;
+
+	color: black;
+}
+
+#closeSettingsButton {
+	margin: 0;
+	padding: 0;
+
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+}
+
+.settingsSectionName {
+	margin-top: 16px;
+
+	letter-spacing: 5px;
+
+	font-weight: bold;
+}
+
+.settingsSection {
+	display: flex;
+
+	padding-top: 20px;
+	padding-bottom: 25px;
+
+	border-bottom: 1px solid grey;
+
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+}
+
+.timeSetter {
+	display: flex;
+
+	flex-flow: column nowrap;
+
+	@media only screen and (max-width: 500px) {
+		width: 100%;
+
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: space-around;
+		align-items: center;
+		margin-bottom: 10px;
+
+		&:last-of-type {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.inputTimerLabel {
+	color: #A5A6B2;
+
+	font-weight: bold;
+}
+
+.inputTimerBox {
+	display: flex;
+	width: 140px;
+	height: 50px;
+
+	border-radius: 10px;
+
+	background-color: $elementsBgColorDarker;
+
+	justify-content: space-around;
+	align-items: center;
+}
+
+.inputTimer {
+	display: block;
+
+	width: 90px;
+
+	font-weight: bold;
+
+	border: none;
+	outline: none;
+	background: none;
+	pointer-events: none;
+}
+
+.IncremDecremBtn {
+	display: block;
+
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	&:hover path {
+		stroke-opacity: 1;
+	}
+}
+
+.coloredCircle {
+	margin: 0;
+	padding: 0;
+
+	width: 50px;
+	height: 50px;
+
+	font-size: 20px;
+
+	border-radius: 50%;
+
+	background-color: black;
+
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+}
+
+.fontSettingCircle::after {
+	content: 'Aa';
+}
+
+.hoverSettingCircle:hover {
+	box-shadow:
+		0 0 0 3px white,
+		0 0 0 5px $elementsBgColorDarker;
+}
+
+.selectedFontCircle {
+	background-color: $elementsBgColor !important; // TODO: not use !important
+	color: white;
+}
+
+.selectedColorCircle::after {
+	content: '✓';
+}
+
+#applySettingsButton {
+	margin-top: auto;
+	margin-bottom: -15px;
+
+	width: 125px;
+	height: 45px;
+
+	border-radius: 30px;
+
+	color: white;
+	background-color: var(--theme-color);
+	
+	align-self: center;
+
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	&:hover {
+		filter: brightness(125%);
+	}
+}
+
+#settingsButton {
+	display: block;
+	text-align: center;
+
+	margin-top: 25px;
+
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+
+	& svg:hover path {
+		opacity: 1;
+	}
+}
