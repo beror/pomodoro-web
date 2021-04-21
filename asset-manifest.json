@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/beror/pomodoro-web/static/css/main.1635e87c.chunk.css",
+    "main.js": "/beror/pomodoro-web/static/js/main.852c6d35.chunk.js",
+    "main.js.map": "/beror/pomodoro-web/static/js/main.852c6d35.chunk.js.map",
+    "runtime-main.js": "/beror/pomodoro-web/static/js/runtime-main.678efd46.js",
+    "runtime-main.js.map": "/beror/pomodoro-web/static/js/runtime-main.678efd46.js.map",
+    "static/js/2.b491129a.chunk.js": "/beror/pomodoro-web/static/js/2.b491129a.chunk.js",
+    "static/js/2.b491129a.chunk.js.map": "/beror/pomodoro-web/static/js/2.b491129a.chunk.js.map",
+    "static/js/3.4009ebc9.chunk.js": "/beror/pomodoro-web/static/js/3.4009ebc9.chunk.js",
+    "static/js/3.4009ebc9.chunk.js.map": "/beror/pomodoro-web/static/js/3.4009ebc9.chunk.js.map",
+    "index.html": "/beror/pomodoro-web/index.html",
+    "static/css/main.1635e87c.chunk.css.map": "/beror/pomodoro-web/static/css/main.1635e87c.chunk.css.map",
+    "static/js/2.b491129a.chunk.js.LICENSE.txt": "/beror/pomodoro-web/static/js/2.b491129a.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/beror/pomodoro-web/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.678efd46.js",
+    "static/js/2.b491129a.chunk.js",
+    "static/css/main.1635e87c.chunk.css",
+    "static/js/main.852c6d35.chunk.js"
+  ]
+}
